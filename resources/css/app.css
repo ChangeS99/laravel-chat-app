@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .top-label {
+        @apply text-sm font-medium text-gray-500;
+    }
+
+    .rounded-full-input {
+        @apply rounded-full px-3 py-3 w-full;
+    }
+
+    .input-error {
+        @apply text-sm text-red-500;
+    }
+}
