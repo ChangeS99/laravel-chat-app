@@ -16,11 +16,11 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col items-center justify-center">
-        <h1>Chat App</h1>
-        <h3>Created Using Laravel, Inertia</h3>
+    <div class="flex flex-col items-center justify-center gap-2">
+        <h1 class="text-6xl font-medium">Chat App</h1>
+        <h3 class="text-3xl">Created Using Laravel, Inertia</h3>
     </div>
-    <div>
+    <div class="flex justify-center pt-4">
         <Link class="px-4 py-2 text-gray-100 bg-gray-700 rounded-lg" :href="route('home')">Get Started</Link>
     </div>
 </template>

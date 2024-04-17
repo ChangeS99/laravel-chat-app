@@ -21,7 +21,11 @@ Broadcast::channel('home-user-{id}-groups', function ($user, $id) {
 });
 
 Broadcast::channel('group-{gid}', function ($user, $gid) {
-    return true;
+
+    // check if the group exists and user is a part of it
+    $groups_users_exist = DB::table('groups_users')->where('groups_id', $gid)->where('users_id', $user->id)->exists();
+
+    return $groups_users_exist;
 });
 
 Broadcast::channel("conversation-{cid}", function ($user, $cid) {
