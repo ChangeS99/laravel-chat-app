@@ -1,5 +1,9 @@
 # Laravel Chat App with Laravel Reverb
 
+## install commands
+1. composer install
+2. pnpm install
+
 ## Requirements
 
 - Laravel installed
